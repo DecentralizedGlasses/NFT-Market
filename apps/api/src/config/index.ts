@@ -11,4 +11,5 @@ export const config = {
   cookieName: process.env.COOKIE_NAME || 'token',
   isProd: process.env.NODE_ENV === 'production',
   nonceTtlMs: Number(process.env.NONCE_TTL_MS || 5 * 60 * 1000),
+  useMockChain: process.env.USE_MOCK_CHAIN === 'true',
 };
